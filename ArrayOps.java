@@ -25,20 +25,21 @@ public class ArrayOps {
 		return result;
 	}
 
-	//public static int[] largestInRows(int[][] matrix) { //4d
-		//int result[] = new int[matrix.length];
-		//if(matrix.length != 0) {
-			//for(int i = 0; i < matrix.length; i++) {
-				//if(matrix[i].length != 0) {
-				//int max = 0;
-				//for(int j = 0; j < matrix[i].length; j++) {
-					//if(matrix[])
-
-
-
+	public static int[] largestInRows(int[][] matrix) { //4d
+		int result[] = new int[matrix.length];
+		if(matrix.length != 0) {
+			for(int i = 0; i < matrix.length; i++) {
+				if(matrix[i].length != 0) {
+					int max = 0;
+					for(int j = 0; j < matrix[i].length; j++) {
+						if(matrix[i][j] > max) max = matrix[i][j];
+					}
+					result[i] += max;
 				}
-			//}
-		//}
-	//}
-//}
+			}	
+		}
+		return result;
+	}
+}
+
 
