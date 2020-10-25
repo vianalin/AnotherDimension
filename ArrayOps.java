@@ -7,7 +7,7 @@ public class ArrayOps {
 		return sum;
 	}
 
-	public static int largest(int[] arr) {
+	public static int largest(int[] arr) { //4b
 		int max = 0;
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] > max) max = arr[i];
@@ -15,17 +15,30 @@ public class ArrayOps {
 		return max;
 	}
 
-	public static int[] sumRows(int[][] matrix) {
-		int sum = 0;
+	public static int[] sumRows(int[][] matrix) { //4c
 		int result[] = new int[matrix.length];
 		for(int i = 0; i < matrix.length; i++) {
 			for(int j = 0; j < matrix[i].length; j++) {
-				sum = matrix[i][j];
-				result[i] += sum;
+				result[i] += matrix[i][j];
 			}
 		}
 		return result;
 	}
 
+	//public static int[] largestInRows(int[][] matrix) { //4d
+		//int result[] = new int[matrix.length];
+		//if(matrix.length != 0) {
+			//for(int i = 0; i < matrix.length; i++) {
+				//if(matrix[i].length != 0) {
+				//int max = 0;
+				//for(int j = 0; j < matrix[i].length; j++) {
+					//if(matrix[])
 
-}
+
+
+				}
+			//}
+		//}
+	//}
+//}
+
