@@ -58,8 +58,7 @@ public class ArrayOps {
 		}
 		return sum;
 	}
-
-	public static int[] sumCols(int[][] matrix) {
+	public static int[] sumCols(int[][] matrix) { //5a
 		int[] result = new int[matrix[0].length];
 		for(int i = 0; i < matrix[0].length; i++) {
 			result[i] = sumCol(matrix, i);
@@ -67,9 +66,13 @@ public class ArrayOps {
 		return result;
 	}
 
-	//public static boolean isRowMagic(int[][] matrix) {
-
-	//}
+	public static boolean isRowMagic(int[][] matrix) { //5b
+		int sum = sum(matrix[0]);
+		for(int i = 1; i < matrix.length; i++) {
+			if(sum != sum(matrix[i])) return false;
+		}
+		return true;
+	}
 
 	//public static boolean isColMagic(int[][] matrix) {
 
