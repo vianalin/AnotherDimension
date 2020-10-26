@@ -50,6 +50,35 @@ public class ArrayOps {
 		}
 		return sum;
 	}
+
+	public static int sumCol(int[][] matrix, int col) {
+		int sum = 0;
+		for(int i = 0; i < matrix.length; i++) {
+			sum += matrix[i][col];
+		}
+		return sum;
+	}
+
+	public static int[] sumCols(int[][] matrix) {
+		int[] result = new int[matrix[0].length];
+		for(int i = 0; i < matrix[0].length; i++) {
+			result[i] = sumCol(matrix, i);
+		}
+		return result;
+	}
+
+	//public static boolean isRowMagic(int[][] matrix) {
+
+	//}
+
+	//public static boolean isColMagic(int[][] matrix) {
+
+	//}
+
+	//public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+
+	//}
+
 }
 
 
