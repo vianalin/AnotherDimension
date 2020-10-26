@@ -11,5 +11,6 @@ public class Tester {
     	System.out.println(Demo.arrToString(ArrayOps.sumCols(new int[][] {{1, 2}, {2,3}}))); //5a
     	System.out.println(ArrayOps.isRowMagic(new int[][] {{1, 2}, {2,3}})); //5b
     	System.out.println(ArrayOps.isRowMagic(new int[][] {{2, 2}, {0, 4}})); //5b
+    	System.out.println(ArrayOps.isColMagic(new int[][] {{2, 3}, {2, 1}, {2, 2}}));
     }
 }
