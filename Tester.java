@@ -8,6 +8,8 @@ public class Tester {
     	System.out.println(Demo.arrToString(ArrayOps.sumRows(new int[][] {{1}, {2,3}}))); // 4c
     	System.out.println(Demo.arrToString(ArrayOps.largestInRows(new int[][] {{1}, {2,3}, {}}))); //4d
     	System.out.println(ArrayOps.sum(new int[][] {{1}, {2,3}})); //4e
-    	System.out.println(Demo.arrToString(ArrayOps.sumCols(new int[][] {{1, 2}, {2,3}})));
+    	System.out.println(Demo.arrToString(ArrayOps.sumCols(new int[][] {{1, 2}, {2,3}}))); //5a
+    	System.out.println(ArrayOps.isRowMagic(new int[][] {{1, 2}, {2,3}})); //5b
+    	System.out.println(ArrayOps.isRowMagic(new int[][] {{2, 2}, {0, 4}})); //5b
     }
 }
