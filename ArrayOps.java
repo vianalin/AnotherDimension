@@ -74,9 +74,13 @@ public class ArrayOps {
 		return true;
 	}
 
-	//public static boolean isColMagic(int[][] matrix) {
-
-	//}
+	public static boolean isColMagic(int[][] matrix) { //5c
+		int sum = sumCol(matrix, 0);
+		for(int i = 1; i < matrix[0].length; i++) {
+			if(sum != sumCol(matrix, i)) return false;
+		}
+		return true;
+	}
 
 	//public static boolean isLocationMagic(int[][] matrix, int row, int col) {
 
